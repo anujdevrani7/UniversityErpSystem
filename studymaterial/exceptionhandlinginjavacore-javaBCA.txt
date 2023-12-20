@@ -1,0 +1,8 @@
+hello all we are going to study about exception handling
+in java
+we have five methods to control exception in java
+they are as follow :-
+try catch
+finally 
+throw 
+throws 

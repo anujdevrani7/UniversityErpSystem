@@ -1,0 +1,4 @@
+hello we are going to 
+study 
+aboout 
+for loop in java 

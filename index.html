@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University erp system </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <!-- custom jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        
+        .container{
+            min-height: 100vh;
+            min-width: 100vw;
+            
+            
+            
+            /* background-color: #f4f4f4; */
+            /* background-color: #a0c4ff; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .dim{
+            padding: 12px;
+            /* background: white; */
+            background: #fff;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin: 10px;
+            border-radius: 18px;
+            max-width: 350px;
+            height: 335px;
+            height: 272px;
+        }
+        .mainhead{
+            padding: 12px;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            /* background-color: #f4f4f4; */
+        }
+        .mainhead h1{
+            background-color: white;
+            border-radius: 12px;
+            max-width: min-content;
+            min-width: max-content;
+            padding: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content{
+            margin: 12px 0px;
+        }
+        
+        body{
+            background: url("images/homepagebakground.jpeg") !important;
+            background-size: cover; 
+
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+
+        /*  chat gpt css*/
+
+        body {
+                background: url("images/homepagebakground.jpeg") !important;
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                margin: 0; /* Remove default body margin */
+
+                /* Apply blur effect to the background */
+                backdrop-filter: blur(5px); /* Adjust the blur strength as needed */
+            }
+
+            .container {
+                min-height: 100vh;
+                min-width: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="mainhead">
+        <h1 align="center">University Erp System</h1>
+    </div>
+    <div class="container">
+        <div class="admin dim">
+            <span>
+                <img src="images/admin.jpg" alt="" height="60px" width="55px">
+            </span>
+            <h3>Admin Login</h3>
+            <div class="content">
+                For Admission Staff only. Use your Employee Code and Password to log in for admission related services.
+
+               
+            </div>
+            <div class="btnn" >
+                <button type="button" id="admin" class="btn btn-outline-primary ">Login</button>
+            </div>
+
+        </div>
+        <div class="faculty dim">
+            <span>
+                <img src="images/staffLogin-icon.png" alt="" height="60px" width="55px">
+            </span>
+            <h3>Faculty Login</h3>
+            <div class="content">
+                Login using your Employee Code and Password to access your account, keep track of your progress and other official services.
+            </div>
+            <div class="btnn">
+                <button type="button" id="faculty" class="btn btn-outline-primary">Login</button>
+            </div>
+
+        </div>
+        <div class="student dim">
+            <span>
+                <img src="images/studentLogin-icon.png" alt="" height="60px" width="55px">
+            </span>
+            <h3>Student Login</h3>
+            <div class="content">
+                Login with your UID and Password to access your Student Services and Account. The CUIMS will keep a record of your progress and keep you apprised of the latest updates.
+            </div>
+            <div class="btnn">
+                <button type="button" id="student" class="btn btn-outline-primary">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery code for navigation  -->
+    <script>
+        $(document).ready(function () {
+            $("#admin").click(function(){
+
+                // alert("admin login button hit");
+                window.location.href="admin/index.php";
+                
+
+            });
+            $("#faculty").click(function(){
+                // alert("faculty login button hit");
+                window.location.href="faculty/index.php";
+            });
+            $("#student").click(function(){ 
+                window.location.href="student/index.php";
+            });
+            
+        });
+    </script>
+
+</body>
+
+</html>
+

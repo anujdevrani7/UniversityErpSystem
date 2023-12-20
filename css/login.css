@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-transform: capitalize;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* background: url(https://media.istockphoto.com/id/1395240672/vector/blur-gradient-glow-abstract-pastel-background.jpg?s=612x612&w=0&k=20&c=3SoqFDOt681fQY3i_3CweeN9miIZnBYoI6oh9h9DP-k=); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* box-shadow: 10px 10px 10px 10px #888888; */
+    box-shadow: 10px 0 20px white;
+    /* box-shadow: inset 5px 5px 10px 0px #888888; */
+    
+    /* background-color: grey; */
+    width: fit-content !important;
+    background-color: white;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
